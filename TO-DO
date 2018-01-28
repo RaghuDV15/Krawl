@@ -1,0 +1,30 @@
+-> Update all the parameters in the model classes properly 
+        -> =C= Updating Rank
+                Get Count of links and subtract the number of links from the rank. with rank weight as 1 
+                Get the count of links that lead to the particular website and add one to rank of the url
+        -> 
+-> Add a list of Host and port discovery list, List of reserved port (final staic List, Combined with list of IP's) (KrawlConfig)
+        Port and IP usage must be based on system configurations, 
+        2GB RAM -> 1 (Port used would be one for the particluar host)
+        4GB RAM -> 2 llly port used would be 2
+        6GB RAM -> 3 llly port used would be 3
+-> Each Krawl Node will have a Stream Producer (Producer Processor) & Stream Consumer (Consumer Processor) with Zookeeper Create, Update, Delete Node functionality. 
+        -> Stream Producer: 
+                Stream topics to consumer, (Host is a topic). 
+                New Host New Topic. 
+                Delegate Topic consumption to desired nodes. 
+                Update All other nodes with the delegated cumsumer. 
+                Each Node Exhaustive list of Node and Topic details (releated topics also)
+        -> Stream Processor (ML)
+        -> Delete Node if the number of topics/messages handled by node is less and then refering the releated topic assign new consumer and update all the nodes. 
+        -> Zookeeper Node Manager (With persistence of ALL runtime configurations) Node Controller uses zookeeper, Each Node stores only its child node, and has permission to change only its child node, Any task of Node management must come through the parent node or master node. 
+                        Create a node and assign topics Set All properties, Id dynamically at runtime 
+                                Manage new execution and related configurations in a file system, UNIX directory based approach 
+                        Delete a node and recover all assigned Id's and config values meant to be reused. 
+                                Recover/ remove all the configs related to deletion of node. 
+                        Update Node Configuration settings at runtime (All values in KrawlConfig)  
+                                Update with disk persistence
+-> Create a list of default topics to be handled by krawl Node in Topic controller (private static List) Default Topics List
+        NodeDetails: ACK of deserialized Node
+        NodeTopics: ACK of deserialised Node (List of Topics in the Node)
+        NodeStats: ACK of deserialized Node (Current Stat of the node)

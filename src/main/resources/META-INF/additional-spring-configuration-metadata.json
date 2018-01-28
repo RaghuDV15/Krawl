@@ -1,0 +1,64 @@
+{
+	"properties": [
+		{
+			"name": "krawl.INDEXPATH",
+			"type": "java.lang.String",
+			"description": "A description for 'krawl.INDEXPATH'"
+		},
+		{
+			"name": "krawl.SEEDPATH",
+			"type": "java.lang.String",
+			"description": "A description for 'krawl.SEEDPATH'"
+		},
+		{
+			"name": "krawl.EXTENSIOM",
+			"type": "java.lang.String",
+			"description": "A description for 'krawl.EXTENSIOM'"
+		},
+		{
+			"name": "krawl.KRAWL_THREADS",
+			"type": "java.lang.String",
+			"description": "A description for 'krawl.KRAWL_THREADS'"
+		},
+		{
+			"name": "krawl.INDEXPATH",
+			"type": "java.lang.String",
+			"description": "A description for 'krawl.INDEXPATH'"
+		},
+		{
+			"name": "krawl.FILTER_THREADS",
+			"type": "java.lang.String",
+			"description": "A description for 'krawl.FILTER_THREADS'"
+		},
+		{
+			"name": "krawl.FILTER_THREADS",
+			"type": "java.lang.String",
+			"description": "A description for 'krawl.FILTER_THREADS'"
+		},
+		{
+			"name": "krawl.POOL_THREADS",
+			"type": "java.lang.String",
+			"description": "A description for 'krawl.POOL_THREADS'"
+		},
+		{
+			"name": "krawl.BACK_THREADS",
+			"type": "java.lang.String",
+			"description": "A description for 'krawl.BACK_THREADS'"
+		},
+		{
+			"name": "krawl.BACK_THREADS",
+			"type": "java.lang.String",
+			"description": "A description for 'krawl.BACK_THREADS'"
+		},
+		{
+			"name": "krawl.BACK_QUEUES",
+			"type": "java.lang.String",
+			"description": "A description for 'krawl.BACK_QUEUES'"
+		},
+		{
+			"name": "krawl.FRONT_QUEUES",
+			"type": "java.lang.String",
+			"description": "A description for 'krawl.FRONT_QUEUES'"
+		}
+	]
+}
